@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% set pageId = "page-search-results" %}
+
+{% block title %}
+    <title>Resultado da pesquisa</title>
+{% endblock title %}
+
+{% block styles %}
+    <link rel="stylesheet" href="styles/search-results.css">
+{% endblock styles %}
+
+{% block content %}
+    {% include "partes/page-header.html" %}
+
+    <main>
+
+    {% if total > 0 %}
+    
+        <h4><strong>{{total}} ponto(s)</strong> encontrado(s)</h4>
+
+        <div class="cards">
+
+            {% for local in locais_coleta %}
+
+                <div class="card">
+                    <img src="{{ local.imagem }}" alt="{{ local.nome }}">
+                    <h1>{{ local.nome }}</h1>
+                    <h3>{{ local.itens }}</h3>
+                    <p>
+                        {{local.cidade}}, {{local.uf}} </br>
+                        {{local.endereco}} </br>
+                        {{local.endereco2}}
+                    </p>
+                </div>
+
+            {% endfor %}
+            
+        </div>
+    
+    {%else%}
+
+    <h4><strong>Nenhum</strong> ponto de coleta encontrado para esta cidade.</h4>
+
+    {% endif %}
+
+    </main>
+{% endblock content %}
