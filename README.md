@@ -1,8 +1,8 @@
 <h1>#NextLevelWeek - Rocketseat</h1>
 <h3>Repositório do projeto "E-coleta", desenvolvido no treinamento "Next Level Week", de 1 a 7 de junho de 2020,
 pela <a href="https://rocketseat.com.br/">Rocketseat<a>. Instrutor: <a href="https://github.com/maykbrito">@maykbrito</a>.</h3>
-
-<img src="https://raw.githubusercontent.com/DanielObara/NLW-1.0/master/.github/logo.svg?sanitize=true">
+  
+<img src="/nlw/ecoleta.png">
 
 <h2>Objetivo</h2>
 <p>"A NLW é uma semana prática com muito código, desafios, networking e um único objetivo: levá-lo ao próximo nível.
