@@ -21,19 +21,18 @@ nunjucks.configure("src/views", {
 // Configurar os caminhos da aplicação:
     // > Página Inicial
 server.get("/", function(req, res){
-    return res.render("index.html", {title: "Título"})
+    return res.render("index.html", {title: "Título"});
 });
 
     // > Página Cadastrar ponto
 server.get("/create-point", function(req, res){              
-    return res.render("create-point.html")
-    
+    return res.render("create-point.html");    
 });
 
 server.post("/savepoint", function(req, res){
    
-    //req.body: O corpo do formulário
-    // console.log(req.body)
+    // req.body: O corpo do formulário
+    // console.log(req.body);
 
     // Inserir dados no banco de dados:
 
@@ -65,7 +64,7 @@ server.post("/savepoint", function(req, res){
             return res.send("Erro no cadastro!");
         }
 
-        console.log("Cadastrado com sucesso.");
+        console.log("Cadastrado com sucesso!");
         console.log(this);
 
         return res.render("create-point.html", { saved: true });
@@ -78,7 +77,7 @@ server.post("/savepoint", function(req, res){
     // Página Lista de Pontos Encontrados
     server.get("/search", function(req, res){
 
-        const search = req.query.search
+        const search = req.query.search;
 
         if (search == ""){
             return res.render("search-results.html", { total: 0 })
@@ -93,9 +92,8 @@ server.post("/savepoint", function(req, res){
             const total = rows.length;
 
             // Mostrar a página html com os dados do banco:
-            return res.render("search-results.html", {locais_coleta: rows, total: total})
-    })
-    
+            return res.render("search-results.html", {locais_coleta: rows, total: total});
+    });    
 });
 
 // Ligar o servidor:
