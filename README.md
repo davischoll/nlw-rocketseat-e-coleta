@@ -15,13 +15,17 @@ impulsionar sua carreira. Um evento online que o ajudará a dar o próximo passo
 A ideia é centralizar, em um ambiente web, informações de coleta de resíduos que necessitam uma destinação específica,
 tais como baterias e pilhas, lâmpadas, óleo de cozinha etc., conectando pessoas com organizações que disponibilizam
 locais para coleta desses itens.
+  
+## Construído com:
+O projeto foi construído com as seguintes tecnologias:
 
-<h2>Tecnologias</h2>
-<p>O projeto foi construído com as seguintes tecnologias:</p>
-  <ul>
-    <li>Javascript</li>
-    <li>Node.js</li>    
-    <li>SQLite</li>
-    <li>HTML</li>
-    <li>CSS</li>
-  </ul>
+* [Express](https://expressjs.com/) - Node.JS Web Application Framework
+* [Nunjucks](https://mozilla.github.io/nunjucks/) - A rich and powerful templating language for JavaScript
+* [Figma](https://figma.com/) - Online prototyping tool.
+* SQLite
+* HTML
+* CSS
+
+## Autor:
+
+* **Davi Scholl** - [LinkedIn](https://www.linkedin.com/in/davi-scholl-463903196/)
